@@ -9,6 +9,7 @@ body {
 }
 p {
     padding: 0 30px;
+    line-height: 1.5;
 }
 
 header {
@@ -29,15 +30,27 @@ li {
 main {
     background: #ffffff;
     padding: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.09);
 }
+
 
 
 a {
     text-decoration: none;
+    color: tomato;
+}
+a:hover{
+    color: lavender;
+}
+a:link {
+    color: turquoise;
 }
 img {
     width: 80%;
     margin: 20px 10px 20px 10%;
+}
+#portfolio {
+    text-transform: uppercase;
 }
 
 .back {
@@ -46,6 +59,12 @@ img {
 }
 .name {
     float: left;
+}
+.footer-nav {
+    display: none;
+}
+footer {
+    font-family: 'Mukta', sans-serif;
 }
 
 .clearfix::after {
@@ -80,9 +99,39 @@ img {
           float: left;
           padding: 10px 0;
       }
+      .back {
+          display: none;
+      }
+      .name {
+          float: left;
+      }
+      .footer-nav {
+          display: block;
+          float: right;
+      }
+      .footer-nav li {
+          padding: 0 10px;
+          margin: 0;
+          background-color: inherit;
+      }
 
   }
 
   @media (min-width:1024px){
-
+      .wrap{
+        max-width:1200px;
+        margin: auto;
+      }
+      h1{
+          float: left;
+      }
+      nav {
+          float: right;
+      }
+      .profile-image{
+          clear: both;
+      }
+      section {
+          width: 33.33%;
+      }
   }
